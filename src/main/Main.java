@@ -11,7 +11,6 @@ import static main.Save.save;
 
 public class Main {
     public static void main(String[] args) {
-
         ArrayList<Vendor> vendors = new ArrayList<>();
         ArrayList<Supplier> suppliers = new ArrayList<>();
         ArrayList<Product> products = new ArrayList<>();
