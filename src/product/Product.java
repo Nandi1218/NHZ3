@@ -1,12 +1,14 @@
-package Product;
+package product;
 
 public class Product {
+    private static int sid = 0;
     private int id;
     private String name;
     private double cost;
 
-    public Product(int id, String name, double cost) {
-        this.id = id;
+    public Product(String name, double cost) {
+        this.id = sid;
+        sid++;
         this.name = name;
         this.cost = cost;
 
@@ -38,10 +40,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", cost=" + cost +
-                '}';
+        return id + " " + name + " " + cost;
     }
 }
