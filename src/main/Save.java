@@ -31,5 +31,6 @@ public class Save {
                 suppliers) {
             fileWriter.write(s.toString() + "\n");
         }
+        fileWriter.close();
     }
 }

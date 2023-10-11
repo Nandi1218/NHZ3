@@ -1,15 +1,20 @@
 package supply;
-
+import product.Product;
 public class Supplier {
-    private final String supplierName;
-    private final int prodId;
-    private final int amount;
-    private final double price;
+    private String supplierName;
+    Product product;
+    private int amount;
+    private double price;
 
-    public Supplier(String supplierName, int prodId, int amount, double price) {
-        this.prodId = prodId;
+    public Supplier(String supplierName, Product product, int amount, double price) {
+        this.supplierName = supplierName;
+        this.product = product;
         this.amount = amount;
         this.price = price;
-        this.supplierName = supplierName;
+    }
+
+    @Override
+    public String toString() {
+        return supplierName + ' ' +product.getId() + " " + amount + " " + price;
     }
 }

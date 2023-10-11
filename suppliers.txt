@@ -1,0 +1,3 @@
+apple_co 0 500 99.9
+pear_co 1 500 99.9
+orange_co 2 500 99.9
